@@ -21,9 +21,6 @@ The assignment is to implement the calculator in a few, maven related steps
 1. Install Maven, if its not on your PC yet (You can use apt on Ubuntu). 
 Verify that its installed by running `mvn -v` in a terminal.
 1. Clone this project.
-1. Install locally: Install the `calculator-api` project locally with 
-```mvn clean install```. You can verify that its installed by 
-checking in your `<home>/.m2` folder.
 1. Create new  maven project in the root folder with `maven-archetype-quickstart`: 
 `mvn archetype:generate -DarchetypeArtifactId=maven-archetype-quickstart`
    Use the following parameters:
@@ -36,12 +33,15 @@ checking in your `<home>/.m2` folder.
 Make a new empty project in IDEA and import all 3 Maven projects as 
 existing modules from the `pom.xml` files.    
 You might need to install your new calculator project, you can do 
-this either from the console (see above) or in the `Maven Projects` tab in IDEA 
+this either from the console (see below) or in the `Maven Projects` tab in IDEA 
 (its on the right side)    
 In the `pom.xml` files adjust the following:
 
 1. Study the pom files and remove unneeded dependencies from them.
-1. set java `source` and `target` runtime to Java 8.0
+1. set java `source` and `target` runtime to Java 8.0.    
+1. Install locally: Install the `calculator-api` project locally with 
+```mvn clean install```. You can verify that its installed by 
+checking in your `<home>/.m2` folder.
 1. change `junit` to latest available version (find it on Maven Central).
 1. add `calculator-api` as a dependency in the generated project
 1. Implement the calculator (Run the project with `mvn clean package`)
