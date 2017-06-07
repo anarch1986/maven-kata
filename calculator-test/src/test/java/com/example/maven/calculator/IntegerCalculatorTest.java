@@ -11,7 +11,8 @@ public class IntegerCalculatorTest {
 
     @BeforeClass
     public static void setup() {
-        calculator = new MyIntCalculator();
+        //TODO instantiate your calculator
+        // calculator = new MyIntCalculator();
     }
 
     @Test

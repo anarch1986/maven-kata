@@ -10,9 +10,14 @@ public class DoubleCalculatorTest {
     private static DoubleCalculator calculator;
     final private static double delta = 0.0001;
 
+    // test if its really a Java 8 project
+    String abc= String.join(" ", "Java", "8");
+
+
     @BeforeClass
     public static void setup() {
-        calculator = new MyDoubleCalculator();
+        //TODO instantiate your calculator
+        // calculator = new MyDoubleCalculator();
     }
 
     @Test
